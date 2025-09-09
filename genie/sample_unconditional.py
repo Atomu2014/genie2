@@ -142,11 +142,11 @@ if __name__ == '__main__':
 	# Define sampling arguments
 	parser.add_argument('--scale', type=float, help='Sampling noise scale', required=True)
 	parser.add_argument('--outdir', type=str, help='Output directory', required=True)
-	parser.add_argument('--num_samples', type=int, help='Number of samples per length', default=5)
-	parser.add_argument('--batch_size', type=int, help='Batch size', default=4)
-	parser.add_argument('--min_length', type=int, help='Minimum sequence length', default=50)
-	parser.add_argument('--max_length', type=int, help='Maximum sequence length', default=256)
-	parser.add_argument('--length_step', type=int, help='Length step size', default=1)
+	parser.add_argument('--num_samples', type=int, help='Number of samples per length', default=25)
+	parser.add_argument('--batch_size', type=int, help='Batch size', default=25)
+	parser.add_argument('--min_length', type=int, help='Minimum sequence length', default=60)
+	parser.add_argument('--max_length', type=int, help='Maximum sequence length', default=255)
+	parser.add_argument('--length_step', type=int, help='Length step size', default=5)
 	
 	# Define environment arguments
 	parser.add_argument('--num_devices', type=int, help='Number of GPU devices', default=1)
